@@ -17,8 +17,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
-  color: black;
+  background-color: var(--orange);
+  color: white;
   height: 100vh;
   width: 100vw;
   font-family: 'Open Sans', sans-serif;
