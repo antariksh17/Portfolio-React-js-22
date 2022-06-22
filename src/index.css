@@ -1,0 +1,202 @@
+:root {
+  --navy-blue: #002347;
+  --mid-navy: #003366;
+  --light-navy: #003f7d;
+  --orange: #ff5003;
+  --mid-orange: #fd7702;
+  --light-orange: #ff8e00; 
+  --white: #fff
+}
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--orange);
+  color: var(--white);
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.App{
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 100vh;
+  
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  animation: nav-load 500ms ease-in;
+  height: 10vh;
+}
+#brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+a{
+  text-decoration: none;
+  font-size: 500;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+
+}
+#nav-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav-ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav-li{
+  padding: 0.8rem;
+  display: block;
+  position: relative;
+  color: var(--white);
+}
+
+.nav-li::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom;
+  transition: transform 0.3s ease-out;
+
+}
+
+.nav-li:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom;
+}
+
+.toggle-button{
+  position:absolute;
+  top: .75rem;
+  right:1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 620px){
+  .toggle-button{
+    display: flex;
+  }
+  .nav-li{
+    display: none;
+  }
+  #navbar{
+    flex-direction: column;
+  }
+  #nav-list{
+    justify-content: center;
+  }
+
+  #nav-ul{
+    flex-direction: column;
+  }
+  .nav-li.active{
+    display: flex;
+
+  }
+
+}
+
+
+@keyframes nav-load {
+
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#header{
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+}
+
+@media (max-width: 620px){
+  #header{font-size: 1.5rem;}
+}
+#headTitle{
+
+  padding: 0;
+  margin: 1rem;
+  text-align: center;
+  transition: 0.5s;
+  animation: head-load 500ms ease-in;
+}
+
+#headTitle:hover {
+  transform: scale(1.2);
+}
+
+
+@keyframes head-load {
+  0% {
+    transform: translateY(+50%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+  
+}
+
+#skills-head {
+  padding: 0.5rem;
+
+  color: var(--white);
+  font-weight: 600;
+  font-size: 48px;
+  width: 10vw;
+
+  text-align: center;
+}
