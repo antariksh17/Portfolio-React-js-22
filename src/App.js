@@ -60,6 +60,10 @@ function App() {
       <section className='skills'>
       <div id="skills-head">
         Skills
+
+        <div>
+          <img src='/assets/icons8-react.svg'/>
+        </div>
       </div>
 
       </section>
