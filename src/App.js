@@ -55,14 +55,13 @@ function App() {
 
       </section>
       <div>
-        <hr/>
       </div>
       <section className='skills'>
       <div id="skills-head">
         Skills
 
         <div>
-          <img src='/assets/icons8-react.svg' alt="react js icon"/>
+
         </div>
       </div>
 
