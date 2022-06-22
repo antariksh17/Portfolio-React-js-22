@@ -62,7 +62,7 @@ function App() {
         Skills
 
         <div>
-          <img src='/assets/icons8-react.svg'/>
+          <img src='/assets/icons8-react.svg' alt="react js icon"/>
         </div>
       </div>
 
