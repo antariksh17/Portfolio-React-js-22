@@ -162,8 +162,8 @@ a{
   justify-content: center;
   align-items: center;
   width: 100vw;
-  background-color: white;
-  color: var(--navy-blue);
+  background-color: var(--navy-blue);
+  color: var(--white) ;
 
 }
 
