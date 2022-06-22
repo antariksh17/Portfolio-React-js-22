@@ -17,8 +17,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--orange);
-  color: var(--white);
+  background-color: white;
+  color: black;
   height: 100vh;
   width: 100vw;
   font-family: 'Open Sans', sans-serif;
@@ -43,6 +43,8 @@ code {
   justify-content: space-between;
   animation: nav-load 500ms ease-in;
   height: 10vh;
+  background-color: var(--orange);
+  color: var(--white);
 }
 #brand{
   display: flex;
